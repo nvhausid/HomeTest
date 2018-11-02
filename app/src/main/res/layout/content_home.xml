@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/home_divider"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#1A237E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/home_title_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/keyword_title" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/keyword_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/keyword_list_height"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/keyword_margin"
+                android:paddingLeft="@dimen/keyword_margin" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:background="#FF4081" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

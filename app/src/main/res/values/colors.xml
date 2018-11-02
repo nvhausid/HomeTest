@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_blue_light</color>
+    <color name="colorPrimaryDark">@android:color/holo_blue_dark</color>
+    <color name="colorAccent">@android:color/holo_red_light</color>
+
+    <color name="home_divider">#EEEEEE</color>
+
+    <string-array name="keyword_colors">
+        <item>#b71c1c</item>
+        <item>#4a148c</item>
+        <item>#1a237e</item>
+        <item>#01579b</item>
+        <item>#004d40</item>
+        <item>#33691e</item>
+        <item>#f57f17</item>
+        <item>#e65100</item>
+    </string-array>
+
+</resources>
